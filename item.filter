@@ -1,0 +1,120 @@
+// Loot filter for Path of Diablo
+// Based off of 'Simplicity' by JNarical
+// https://raw.githubusercontent.com/narical/Simplicity/master/item.filter
+
+// Hidden Items - Gold piles
+ItemDisplay[CLVL>5  GOLD<25]:
+ItemDisplay[CLVL>7  GOLD<50]:
+ItemDisplay[CLVL>14 GOLD<100]:
+ItemDisplay[CLVL>21 GOLD<200]:
+ItemDisplay[CLVL>28 GOLD<300]:
+ItemDisplay[CLVL>35 GOLD<400]:
+ItemDisplay[CLVL>40 GOLD<500]:
+ItemDisplay[CLVL>60 GOLD<1000]:
+ItemDisplay[CLVL>70 GOLD<1500]:
+ItemDisplay[CLVL>80 GOLD<2000]:
+
+// Hidden Items - Less useful potions
+ItemDisplay[hp1 CLVL>15]:
+ItemDisplay[mp1 CLVL>15]:
+ItemDisplay[hp2 CLVL>30]:
+ItemDisplay[mp2 CLVL>30]:
+ItemDisplay[hp3 CLVL>45]:
+ItemDisplay[mp3 CLVL>45]:
+ItemDisplay[hp4 CLVL>60]:
+ItemDisplay[mp4 CLVL>60]:
+
+// Hidden Items - Normal items
+ItemDisplay[NORM CLVL>4  NMAG !RW INF]:
+ItemDisplay[NORM CLVL>14 (NMAG OR MAG) !RW SOCK<2]:
+ItemDisplay[NORM CLVL>34 NMAG !RW]:
+
+// Hidden Items - Gems
+ItemDisplay[gcv OR gcy OR gcb OR gcg OR gcr OR gcw OR skc AND CLVL>25]:
+ItemDisplay[gfv OR gfy OR gfb OR gfg OR gfr OR gfw OR skf AND CLVL>30]:
+ItemDisplay[gsv OR gsy OR gsb OR gsg OR gsr OR gsw OR sku AND CLVL>60]:
+
+// Hidden Items - Basic Bolts and Arrows
+ItemDisplay[(aq2 OR cq2) (NMAG OR MAG)]:
+
+// Hidden Items - Thrown potions
+ItemDisplay[gpm OR opm OR opl OR ops OR gps OR gpl AND CLVL>5]:
+
+// Custom Color - Gold piles
+ItemDisplay[GOLD]: %TAN%%NAME%
+
+// Custom Color - Keys
+ItemDisplay[key]: %GRAY%Key
+
+// Custom Color - Scrolls (renamed)
+ItemDisplay[tsc]: %BLUE%TP
+ItemDisplay[isc]: %RED%ID
+
+// Custom Color - Resist Potions
+ItemDisplay[vps]: %GRAY%Stamina
+ItemDisplay[wms]: %GRAY%Thawing
+ItemDisplay[yps]: %GRAY%Antidote
+
+// Custom Color - Expensive items
+ItemDisplay[(WP11 OR WP12 OR WP13) (NMAG OR MAG) !RW SOCK<2]: %WHITE%%NAME% ($ %PRICE%) // staves, wands and scepters
+ItemDisplay[CL1 (NMAG OR MAG) !RW SOCK<2]: %WHITE%%NAME% ($ %PRICE%) // Druid pelts
+ItemDisplay[CL2 (NMAG OR MAG) !RW SOCK<2]: %WHITE%%NAME% ($ %PRICE%) // Barbarian helmets
+ItemDisplay[CL4 (NMAG OR MAG) !RW SOCK<2]: %WHITE%%NAME% ($ %PRICE%) // Necromancer shields
+ItemDisplay[CL6 (NMAG OR MAG) !RW SOCK<2]: %WHITE%%NAME% ($ %PRICE%) // Sorceress weapons
+
+// Custom Color - Ethereal / Magic / Rare / Uni / Set / Socketed
+ItemDisplay[NORM NMAG ETH !RW SOCK=0]: %NAME% e
+ItemDisplay[NORM NMAG ETH !RW]: %NAME% e %SOCKETS%o
+ItemDisplay[NORM NMAG !RW SOCK>0]: %NAME% %SOCKETS%o
+ItemDisplay[NORM MAG ETH SOCK>1]: %NAME% e %SOCKETS%o
+ItemDisplay[NORM MAG SOCK>1]: %NAME% %SOCKETS%o
+ItemDisplay[NORM ETH RARE SOCK=0]: %NAME% e
+ItemDisplay[NORM ETH RARE]: %NAME% e %SOCKETS%o
+ItemDisplay[NORM RARE SOCK=0]: %NAME%
+ItemDisplay[NORM RARE]: %NAME% %SOCKETS%o
+ItemDisplay[NORM ETH UNI SOCK=0]: %NAME%
+ItemDisplay[NORM ETH UNI]: %NAME% e %SOCKETS%o
+ItemDisplay[NORM UNI SOCK=0]: %NAME%
+ItemDisplay[NORM UNI]: %NAME% %SOCKETS%o
+ItemDisplay[NORM ETH RW]: %NAME% e rw
+ItemDisplay[NORM RW]:	%NAME% rw
+ItemDisplay[NORM SET SOCK=0]:	%NAME%
+ItemDisplay[NORM SET]: %NAME% %SOCKETS%o
+
+// EXCEPTIONAL ITEMS
+ItemDisplay[EXC NMAG ETH !RW SOCK>1]: %NAME% e %SOCKETS%o %YELLOW%II
+ItemDisplay[EXC NMAG !RW SOCK>1]: %NAME% %SOCKETS%o %YELLOW%II
+ItemDisplay[EXC NMAG !RW]:
+ItemDisplay[EXC MAG ETH SOCK>1]: %NAME% r %SOCKETS%o %YELLOW%II
+ItemDisplay[EXC MAG SOCK>1]: %NAME% %SOCKETS%o %YELLOW%II
+ItemDisplay[EXC MAG]:
+ItemDisplay[EXC	ETH RARE SOCK>0]: %NAME% r %SOCKETS%o %YELLOW%II
+ItemDisplay[EXC	ETH RARE]: %NAME% e %YELLOW%II
+ItemDisplay[EXC RARE SOCK>0]: %NAME% %SOCKETS%o %YELLOW%II
+ItemDisplay[EXC RARE]: %NAME%%YELLOW%II
+ItemDisplay[EXC ETH UNI SOCK>0]: %NAME% e %SOCKETS%o %YELLOW%II
+ItemDisplay[EXC ETH UNI]: %NAME% e %YELLOW%II
+ItemDisplay[EXC UNI]:	%NAME% %YELLOW%II
+ItemDisplay[EXC ETH RW]: %NAME% e rw %YELLOW%II
+ItemDisplay[EXC RW]: %NAME% rw %YELLOW%II
+ItemDisplay[EXC SET SOCK>0]: %NAME% %SOCKETS%o %YELLOW%II
+ItemDisplay[EXC SET]: %NAME%%YELLOW%II
+
+// ELITE ITEMS
+ItemDisplay[ELT NMAG ETH !RW SOCK>1]: %NAME% e %SOCKETS%o %RED%III
+ItemDisplay[ELT NMAG !RW SOCK>1]: %NAME% %SOCKETS%o %RED%III
+ItemDisplay[ELT NMAG !RW]: %NAME%%RED%III
+ItemDisplay[ELT MAG ETH SOCK>1]: %NAME% e %SOCKETS%o %RED%III
+ItemDisplay[ELT MAG SOCK>1]: %NAME% %SOCKETS%o %RED%III
+ItemDisplay[ELT MAG]: %NAME%%RED%III
+ItemDisplay[ELT	ETH RARE SOCK>0]: %NAME% e %SOCKETS%o %RED%III
+ItemDisplay[ELT	ETH RARE]: %NAME% e%RED%III
+ItemDisplay[ELT RARE SOCK>0]: %NAME% %SOCKETS%o %RED%III
+ItemDisplay[ELT RARE]: %NAME%%RED%III
+ItemDisplay[ELT ETH UNI SOCK>0]: %NAME% e %SOCKETS%o %RED%III
+ItemDisplay[ELT ETH UNI]: %NAME% e %RED%III
+ItemDisplay[ELT UNI]:	%NAME% %RED%III
+ItemDisplay[ELT ETH RW]: %NAME% e rw%RED%III
+ItemDisplay[ELT RW]: %NAME% rw%RED%III
+ItemDisplay[ELT SET SOCK>0]: %NAME% %SOCKETS%o %RED%III
+ItemDisplay[ELT SET]: %NAME%%RED%III
