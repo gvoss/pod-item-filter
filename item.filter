@@ -15,19 +15,18 @@ ItemDisplay[CLVL>70 GOLD<1500]:
 ItemDisplay[CLVL>80 GOLD<2000]:
 
 // Hidden Items - Less useful potions
-ItemDisplay[hp1 CLVL>15]:
-ItemDisplay[mp1 CLVL>15]:
-ItemDisplay[hp2 CLVL>30]:
-ItemDisplay[mp2 CLVL>30]:
-ItemDisplay[hp3 CLVL>45]:
-ItemDisplay[mp3 CLVL>45]:
-ItemDisplay[hp4 CLVL>60]:
-ItemDisplay[mp4 CLVL>60]:
+ItemDisplay[hp1 CLVL>10]:
+ItemDisplay[mp1 CLVL>10]:
+ItemDisplay[hp2 CLVL>20]:
+ItemDisplay[mp2 CLVL>20]:
+ItemDisplay[hp3 CLVL>30]:
+ItemDisplay[mp3 CLVL>30]:
+ItemDisplay[hp4 CLVL>45]:
+ItemDisplay[mp4 CLVL>45]:
 
 // Hidden Items - Gems
-ItemDisplay[gcv OR gcy OR gcb OR gcg OR gcr OR gcw OR skc AND CLVL>25]:
-ItemDisplay[gfv OR gfy OR gfb OR gfg OR gfr OR gfw OR skf AND CLVL>30]:
-ItemDisplay[gsv OR gsy OR gsb OR gsg OR gsr OR gsw OR sku AND CLVL>60]:
+ItemDisplay[gcv OR gcy OR gcb OR gcg OR gcr OR gcw OR skc AND CLVL>10]:
+ItemDisplay[gfv OR gfy OR gfb OR gfg OR gfr OR gfw OR skf AND CLVL>20]:
 
 // Hidden Items - Basic Bolts and Arrows
 ItemDisplay[(aq2 OR cq2) (NMAG OR MAG)]:
@@ -36,8 +35,8 @@ ItemDisplay[(aq2 OR cq2) (NMAG OR MAG)]:
 ItemDisplay[gpm OR opm OR opl OR ops OR gps OR gpl AND CLVL>5]:
 
 // Custom Color - Potions
-ItemDisplay[hp1 or hp2 or hp3 or hp4 or hp5]: %RED%+HP
-ItemDisplay[mp1 or mp2 or mp3 or mp4 or mp5]: %BLUE%+MP
+ItemDisplay[hp1 OR hp2 OR hp3 OR hp4 OR hp5]: %RED%+HP
+ItemDisplay[mp1 OR mp2 OR mp3 OR mp4 OR mp5]: %BLUE%+MP
 
 // Custom Color - Keys
 ItemDisplay[key]: %GRAY%Key
@@ -52,11 +51,11 @@ ItemDisplay[wms]: %GRAY%Thawing
 ItemDisplay[yps]: %GRAY%Antidote
 
 // Custom Color - Expensive items
-ItemDisplay[(WP11 OR WP12 OR WP13) (NMAG OR MAG) !RW SOCK<2]: %WHITE%%NAME% ($ %PRICE%) // staves, wands and scepters
-ItemDisplay[CL1 (NMAG OR MAG) !RW SOCK<2]: %WHITE%%NAME% ($ %PRICE%) // Druid pelts
-ItemDisplay[CL2 (NMAG OR MAG) !RW SOCK<2]: %WHITE%%NAME% ($ %PRICE%) // Barbarian helmets
-ItemDisplay[CL4 (NMAG OR MAG) !RW SOCK<2]: %WHITE%%NAME% ($ %PRICE%) // Necromancer shields
-ItemDisplay[CL6 (NMAG OR MAG) !RW SOCK<2]: %WHITE%%NAME% ($ %PRICE%) // Sorceress weapons
+ItemDisplay[(WP11 OR WP12 OR WP13) (NMAG OR MAG) !RW SOCK<2]: %WHITE%%NAME% (%PRICE%) // staves, wands and scepters
+ItemDisplay[CL1 (NMAG OR MAG) !RW SOCK<2]: %WHITE%%NAME% (%PRICE%) // Druid pelts
+ItemDisplay[CL2 (NMAG OR MAG) !RW SOCK<2]: %WHITE%%NAME% (%PRICE%) // Barbarian helmets
+ItemDisplay[CL4 (NMAG OR MAG) !RW SOCK<2]: %WHITE%%NAME% (%PRICE%) // Necromancer shields
+ItemDisplay[CL6 (NMAG OR MAG) !RW SOCK<2]: %WHITE%%NAME% (%PRICE%) // Sorceress weapons
 
 // Custom Color - Ethereal / Magic / Rare / Uni / Set / Socketed
 ItemDisplay[NORM NMAG ETH !RW SOCK=0]: %NAME%
