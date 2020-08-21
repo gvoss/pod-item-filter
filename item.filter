@@ -54,19 +54,13 @@ ItemDisplay[vps]: %GRAY%Stamina
 ItemDisplay[wms]: %GRAY%Thawing
 ItemDisplay[yps]: %GRAY%Antidote
 
-// Custom Color - Expensive items
-ItemDisplay[(WP11 OR WP12 OR WP13) (NMAG OR MAG) !RW SOCK<2]: %WHITE%%NAME% (%PRICE%) // staves, wands and scepters
-ItemDisplay[CL1 (NMAG OR MAG) !RW SOCK<2]: %WHITE%%NAME% (%PRICE%) // Druid pelts
-ItemDisplay[CL2 (NMAG OR MAG) !RW SOCK<2]: %WHITE%%NAME% (%PRICE%) // Barbarian helmets
-ItemDisplay[CL4 (NMAG OR MAG) !RW SOCK<2]: %WHITE%%NAME% (%PRICE%) // Necromancer shields
-ItemDisplay[CL6 (NMAG OR MAG) !RW SOCK<2]: %WHITE%%NAME% (%PRICE%) // Sorceress weapons
-
-// Hidden Items - Normal Items
-ItemDisplay[NMAG !ETH !RW SOCK=0]:
+// Hidden Items - Normal Items but not expensive ones
+ItemDisplay[NMAG !ETH !RW SOCK=0 PRICE<9999]:
+ItemDisplay[NMAG !ETH !RW SOCK=0]: %WHITE%%NAME% %GRAY%%PRICE%
 
 // Decorate special items
 ItemDisplay[NORM OR EXC OR ELT]: %NAME%%CONTINUE%
-ItemDisplay[ETH]: %ITEM%%GRAY% eth%CONTINUE%
-ItemDisplay[SOCK>0]: %ITEM%%GRAY% (%SOCKETS%)%CONTINUE%
-ItemDisplay[EXC]: %ITEM%%YELLOW% *
-ItemDisplay[ELT]: %ITEM%%RED% *
+ItemDisplay[ETH]: %NAME%%GRAY% eth%CONTINUE%
+ItemDisplay[SOCK>0]: %NAME%%GRAY% (%SOCKETS%)%CONTINUE%
+ItemDisplay[EXC]: %NAME%%YELLOW% *
+ItemDisplay[ELT]: %NAME%%RED% *
