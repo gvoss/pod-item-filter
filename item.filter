@@ -24,11 +24,6 @@ ItemDisplay[mp3 CLVL>45]:
 ItemDisplay[hp4 CLVL>60]:
 ItemDisplay[mp4 CLVL>60]:
 
-// Hidden Items - Normal items
-//ItemDisplay[NORM CLVL>4  NMAG !RW INF]:
-//ItemDisplay[NORM CLVL>14 (NMAG OR MAG) !RW SOCK<2]:
-//ItemDisplay[NORM CLVL>34 NMAG !RW]:
-
 // Hidden Items - Gems
 ItemDisplay[gcv OR gcy OR gcb OR gcg OR gcr OR gcw OR skc AND CLVL>25]:
 ItemDisplay[gfv OR gfy OR gfb OR gfg OR gfr OR gfw OR skf AND CLVL>30]:
@@ -40,8 +35,9 @@ ItemDisplay[(aq2 OR cq2) (NMAG OR MAG)]:
 // Hidden Items - Thrown potions
 ItemDisplay[gpm OR opm OR opl OR ops OR gps OR gpl AND CLVL>5]:
 
-// Custom Color - Gold piles
-ItemDisplay[GOLD>0]: %TAN%%NAME%
+// Custom Color - Potions
+ItemDisplay[hp1 or hp2 or hp3 or hp4 or hp5]: %RED%+HP
+ItemDisplay[mp1 or mp2 or mp3 or mp4 or mp5]: %BLUE%+MP
 
 // Custom Color - Keys
 ItemDisplay[key]: %GRAY%Key
@@ -63,40 +59,40 @@ ItemDisplay[CL4 (NMAG OR MAG) !RW SOCK<2]: %WHITE%%NAME% ($ %PRICE%) // Necroman
 ItemDisplay[CL6 (NMAG OR MAG) !RW SOCK<2]: %WHITE%%NAME% ($ %PRICE%) // Sorceress weapons
 
 // Custom Color - Ethereal / Magic / Rare / Uni / Set / Socketed
-ItemDisplay[NORM NMAG ETH !RW SOCK=0]: %NAME% e
-ItemDisplay[NORM NMAG ETH !RW]: %NAME% e %SOCKETS%o
-ItemDisplay[NORM NMAG !RW SOCK>0]: %NAME% %SOCKETS%o
-ItemDisplay[NORM MAG ETH SOCK>1]: %NAME% e %SOCKETS%o
-ItemDisplay[NORM MAG SOCK>1]: %NAME% %SOCKETS%o
-ItemDisplay[NORM ETH RARE SOCK=0]: %NAME% e
-ItemDisplay[NORM ETH RARE]: %NAME% e %SOCKETS%o
+ItemDisplay[NORM NMAG ETH !RW SOCK=0]: %NAME%
+ItemDisplay[NORM NMAG ETH !RW]: %NAME% (%SOCKETS%)
+ItemDisplay[NORM NMAG !RW SOCK>0]: %NAME% %GRAY%(%SOCKETS%)
+ItemDisplay[NORM MAG ETH SOCK>1]: %NAME% (%SOCKETS%)
+ItemDisplay[NORM MAG SOCK>1]: %NAME% %GRAY%(%SOCKETS%)
+ItemDisplay[NORM ETH RARE SOCK=0]: %NAME% %GRAY%e
+ItemDisplay[NORM ETH RARE]: %NAME% %GRAY%e
 ItemDisplay[NORM RARE SOCK=0]: %NAME%
-ItemDisplay[NORM RARE]: %NAME% %SOCKETS%o
+ItemDisplay[NORM RARE]: %NAME% %GRAY%(%SOCKETS%)
 ItemDisplay[NORM ETH UNI SOCK=0]: %NAME%
-ItemDisplay[NORM ETH UNI]: %NAME% e %SOCKETS%o
+ItemDisplay[NORM ETH UNI]: %NAME% %GRAY%(%SOCKETS%)
 ItemDisplay[NORM UNI SOCK=0]: %NAME%
-ItemDisplay[NORM UNI]: %NAME% %SOCKETS%o
-ItemDisplay[NORM ETH RW]: %NAME% e rw
-ItemDisplay[NORM RW]:	%NAME% rw
+ItemDisplay[NORM UNI]: %NAME%
+ItemDisplay[NORM ETH RW]: %NAME% %GRAY$e
+ItemDisplay[NORM RW]:	%NAME%
 ItemDisplay[NORM SET SOCK=0]:	%NAME%
-ItemDisplay[NORM SET]: %NAME% %SOCKETS%o
+ItemDisplay[NORM SET]: %NAME% %GRAY%(%SOCKETS%)
 
 // EXCEPTIONAL ITEMS
-ItemDisplay[EXC NMAG ETH !RW SOCK>1]: %NAME% %GRAY%e (%GRAY%%SOCKETS%) %YELLOW%*
-ItemDisplay[EXC NMAG !RW SOCK>1]: %NAME% (%GRAY%%SOCKETS%) %YELLOW%*
-ItemDisplay[EXC NMAG !RW]:
+ItemDisplay[EXC NMAG ETH !RW SOCK>1]: %NAME% (%SOCKETS%) %YELLOW%*
+ItemDisplay[EXC NMAG !RW SOCK>1]: %NAME% %GRAY%(%SOCKETS%) %YELLOW%*
+ItemDisplay[EXC NMAG !RW]: %NAME% %YELLOW%*
 ItemDisplay[EXC MAG ETH SOCK>1]: %NAME% r (%GRAY%%SOCKETS%) %YELLOW%*
 ItemDisplay[EXC MAG SOCK>1]: %NAME% (%GRAY%%SOCKETS%) %YELLOW%*
-ItemDisplay[EXC MAG]:
+ItemDisplay[EXC MAG]: %NAME% %YELLOW%*
 ItemDisplay[EXC	ETH RARE SOCK>0]: %NAME% r (%GRAY%%SOCKETS%) %YELLOW%*
 ItemDisplay[EXC	ETH RARE]: %NAME% %GRAY%e %YELLOW%*
 ItemDisplay[EXC RARE SOCK>0]: %NAME% (%GRAY%%SOCKETS%) %YELLOW%*
-ItemDisplay[EXC RARE]: %NAME%%YELLOW%*
+ItemDisplay[EXC RARE]: %NAME% %YELLOW%*
 ItemDisplay[EXC ETH UNI SOCK>0]: %NAME% %GRAY%e (%GRAY%%SOCKETS%) %YELLOW%*
 ItemDisplay[EXC ETH UNI]: %NAME% %GRAY%e %YELLOW%*
 ItemDisplay[EXC UNI]:	%NAME% %YELLOW%*
-ItemDisplay[EXC ETH RW]: %NAME% %GRAY%e %TAN%rw %YELLOW%*
-ItemDisplay[EXC RW]: %NAME% %TAN%rw %YELLOW%*
+ItemDisplay[EXC ETH RW]: %NAME% %GRAY%e %YELLOW%*
+ItemDisplay[EXC RW]: %NAME% %YELLOW%*
 ItemDisplay[EXC SET SOCK>0]: %NAME% (%GRAY%%SOCKETS%) %YELLOW%*
 ItemDisplay[EXC SET]: %NAME%%YELLOW%*
 
@@ -114,7 +110,7 @@ ItemDisplay[ELT RARE]: %NAME%%RED%*
 ItemDisplay[ELT ETH UNI SOCK>0]: %NAME% %GRAY%e (%GRAY%%SOCKETS%) %RED%*
 ItemDisplay[ELT ETH UNI]: %NAME% %GRAY%e %RED%*
 ItemDisplay[ELT UNI]:	%NAME% %RED%*
-ItemDisplay[ELT ETH RW]: %NAME% %GRAY%e %TAN%rw %RED%*
-ItemDisplay[ELT RW]: %NAME% %TAN%rw %RED%*
+ItemDisplay[ELT ETH RW]: %NAME% %GRAY%e %RED%*
+ItemDisplay[ELT RW]: %NAME% %RED%*
 ItemDisplay[ELT SET SOCK>0]: %NAME% (%GRAY%%SOCKETS%) %RED%*
 ItemDisplay[ELT SET]: %NAME%%RED%*
