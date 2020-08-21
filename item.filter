@@ -66,7 +66,7 @@ ItemDisplay[NMAG !ETH !RW SOCK=0]:
 
 // Decorate special items
 ItemDisplay[NORM OR EXC OR ELT]: %NAME%%CONTINUE%
-ItemDisplay[ETH]: %GRAY% eth%CONTINUE%
-ItemDisplay[Sock>0]: %GRAY% (%SOCKETS%)%CONTINUE%
-ItemDisplay[EXC]: %YELLOW% *
-ItemDisplay[ELT]: %RED% *
+ItemDisplay[ETH]: %ITEM%%GRAY% eth%CONTINUE%
+ItemDisplay[SOCK>0]: %ITEM%%GRAY% (%SOCKETS%)%CONTINUE%
+ItemDisplay[EXC]: %ITEM%%YELLOW% *
+ItemDisplay[ELT]: %ITEM%%RED% *
