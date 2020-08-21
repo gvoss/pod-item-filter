@@ -38,6 +38,10 @@ ItemDisplay[gpm OR opm OR opl OR ops OR gps OR gpl AND CLVL>5]:
 ItemDisplay[hp1 OR hp2 OR hp3 OR hp4 OR hp5]: %RED%+HP
 ItemDisplay[mp1 OR mp2 OR mp3 OR mp4 OR mp5]: %BLUE%+MP
 
+// Custom Color - Rejuvenation (renamed)
+ItemDisplay[rvs OR rvl AND CLVL>20]: %PURPLE%+%GRAY%HPMP
+ItemDisplay[rvs OR rvl]: %PURPLE%+HPMP
+
 // Custom Color - Keys
 ItemDisplay[key]: %GRAY%Key
 
@@ -56,6 +60,9 @@ ItemDisplay[CL1 (NMAG OR MAG) !RW SOCK<2]: %WHITE%%NAME% (%PRICE%) // Druid pelt
 ItemDisplay[CL2 (NMAG OR MAG) !RW SOCK<2]: %WHITE%%NAME% (%PRICE%) // Barbarian helmets
 ItemDisplay[CL4 (NMAG OR MAG) !RW SOCK<2]: %WHITE%%NAME% (%PRICE%) // Necromancer shields
 ItemDisplay[CL6 (NMAG OR MAG) !RW SOCK<2]: %WHITE%%NAME% (%PRICE%) // Sorceress weapons
+
+// Hidden Items - Normal Items
+ItemDisplay[NMAG !ETH !RW SOCK=0]:
 
 // Custom Color - Ethereal / Magic / Rare / Uni / Set / Socketed
 ItemDisplay[NORM NMAG ETH !RW SOCK=0]: %NAME%
