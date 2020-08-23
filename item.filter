@@ -35,33 +35,31 @@ ItemDisplay[(aq2 OR cq2) (NMAG OR MAG)]:
 ItemDisplay[gpm OR opm OR opl OR ops OR gps OR gpl AND CLVL>5]:
 
 // Custom Color - Potions
-ItemDisplay[hp1 OR hp2 OR hp3 OR hp4 OR hp5]: %RED%+HP
-ItemDisplay[mp1 OR mp2 OR mp3 OR mp4 OR mp5]: %BLUE%+MP
+ItemDisplay[hp1 OR hp2 OR hp3 OR hp4 OR hp5]: %RED%+HP%WHITE%
+ItemDisplay[mp1 OR mp2 OR mp3 OR mp4 OR mp5]: %BLUE%+MP%WHITE%
 
 // Custom Color - Rejuvenation (renamed)
-ItemDisplay[rvs AND CLVL>20]: %PURPLE%+%GRAY%HPMP
-ItemDisplay[rvs OR rvl]: %PURPLE%+HPMP
+ItemDisplay[rvs AND CLVL>20]: %PURPLE%+%GRAY%HPMP%WHITE%
+ItemDisplay[rvs OR rvl]: %PURPLE%+HPMP%WHITE%
 
 // Custom Color - Keys
-ItemDisplay[key]: %GRAY%Key
+ItemDisplay[key]: %GRAY%Key%WHITE%
 
 // Custom Color - Scrolls (renamed)
-ItemDisplay[tsc]: %BLUE%TP
-ItemDisplay[isc]: %RED%ID
+ItemDisplay[tsc]: %BLUE%TP%WHITE%
+ItemDisplay[isc]: %RED%ID%WHITE%
 
 // Custom Color - Resist Potions
-ItemDisplay[vps]: %GRAY%Stamina
-ItemDisplay[wms]: %GRAY%Thawing
-ItemDisplay[yps]: %GRAY%Antidote
+ItemDisplay[vps]: %GRAY%Stamina%WHITE%
+ItemDisplay[wms]: %GRAY%Thawing%WHITE%
+ItemDisplay[yps]: %GRAY%Antidote%WHITE%
 
 // Hidden Items - Normal Items but not expensive ones
-ItemDisplay[NMAG !ETH !RW SOCK=0 PRICE<9999 (WEAPON OR ARMOR)]:
-ItemDisplay[NMAG !ETH !RW SOCK=0 (WEAPON OR ARMOR)]: %WHITE%%NAME% %GRAY%%PRICE%
+ItemDisplay[NMAG !ETH !RW SOCK=0 (WEAPON OR ARMOR) (EXC OR ELT)]: %WHITE%%NAME% %GRAY%%PRICE%%WHITE%
 
 // Decorate special items
 ItemDisplay[NORM OR EXC OR ELT]: %NAME%%WHITE%%CONTINUE%
 ItemDisplay[ETH]: %NAME%%GRAY% eth%WHITE%%CONTINUE%
 ItemDisplay[SOCK>0]: %NAME%%GRAY% (%SOCKETS%)%WHITE%%CONTINUE%
-ItemDisplay[PRICE>10000]: %NAME%%GRAY%%PRICE%%WHITE%%CONTINUE%
 ItemDisplay[EXC]: %NAME%%YELLOW% *%WHITE%
 ItemDisplay[ELT]: %NAME%%RED% *%WHITE%
