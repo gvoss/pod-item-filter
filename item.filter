@@ -59,8 +59,9 @@ ItemDisplay[NMAG !ETH !RW SOCK=0 PRICE<9999 (WEAPON OR ARMOR)]:
 ItemDisplay[NMAG !ETH !RW SOCK=0 (WEAPON OR ARMOR)]: %WHITE%%NAME% %GRAY%%PRICE%
 
 // Decorate special items
-ItemDisplay[NORM OR EXC OR ELT]: %NAME%%CONTINUE%
-ItemDisplay[ETH]: %NAME%%GRAY% eth%CONTINUE%
-ItemDisplay[SOCK>0]: %NAME%%GRAY% (%SOCKETS%)%CONTINUE%
-ItemDisplay[EXC]: %NAME%%YELLOW% *
-ItemDisplay[ELT]: %NAME%%RED% *
+ItemDisplay[NORM OR EXC OR ELT]: %NAME%%WHITE%%CONTINUE%
+ItemDisplay[ETH]: %NAME%%GRAY% eth%WHITE%%CONTINUE%
+ItemDisplay[SOCK>0]: %NAME%%GRAY% (%SOCKETS%)%WHITE%%CONTINUE%
+ItemDisplay[PRICE>10000]: %NAME%%GRAY%%PRICE%%WHITE%%CONTINUE%
+ItemDisplay[EXC]: %NAME%%YELLOW% *%WHITE%
+ItemDisplay[ELT]: %NAME%%RED% *%WHITE%
