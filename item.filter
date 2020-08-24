@@ -55,7 +55,8 @@ ItemDisplay[wms]: %GRAY%Thawing%WHITE%
 ItemDisplay[yps]: %GRAY%Antidote%WHITE%
 
 // Hidden Items - Normal Items but not expensive ones
-ItemDisplay[NMAG !ETH !RW SOCK=0 (WEAPON OR ARMOR) (EXC OR ELT)]: %WHITE%%NAME% %GRAY%%PRICE%%WHITE%
+ItemDisplay[NMAG !ETH !RW SOCK=0 ELT (WEAPON OR ARMOR)]: %WHITE%%NAME% %GRAY%%PRICE%%RED% *%WHITE%
+ItemDisplay[NMAG !ETH !RW SOCK=0 (WEAPON OR ARMOR)]:
 
 // Decorate special items
 ItemDisplay[NORM OR EXC OR ELT]: %NAME%%WHITE%%CONTINUE%
