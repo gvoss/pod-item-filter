@@ -1,6 +1,4 @@
-// Loot filter for Path of Diablo
-// Based off of 'Simplicity' by JNarical
-// https://raw.githubusercontent.com/narical/Simplicity/master/item.filter
+// Simple loot filter for Path of Diablo
 
 // Hidden Items - Gold piles
 ItemDisplay[CLVL>5  GOLD<25]:
@@ -54,13 +52,14 @@ ItemDisplay[vps]: %GRAY%Stamina%WHITE%
 ItemDisplay[wms]: %GRAY%Thawing%WHITE%
 ItemDisplay[yps]: %GRAY%Antidote%WHITE%
 
-// Hidden Items - Normal Items but not expensive ones
-ItemDisplay[NMAG !ETH !RW SOCK=0 ELT (WEAPON OR ARMOR)]: %WHITE%%NAME% %GRAY%%PRICE%%RED% *%WHITE%
-ItemDisplay[NMAG !ETH !RW !leg SOCK=0 (WEAPON OR ARMOR)]:
+// Hidden Items - White Items based on level
+ItemDisplay[NMAG !ETH !RW !leg SOCK=0 NORM (WEAPON OR ARMOR) CLVL>20]:
+ItemDisplay[NMAG !ETH !RW !leg SOCK=0 EXC (WEAPON OR ARMOR) CLVL>85]:
 
 // Decorate special items
 ItemDisplay[NORM OR EXC OR ELT]: %NAME%%WHITE%%CONTINUE%
 ItemDisplay[ETH]: %NAME%%GRAY% eth%WHITE%%CONTINUE%
 ItemDisplay[SOCK>0]: %NAME%%GRAY% (%SOCKETS%)%WHITE%%CONTINUE%
+ItemDisplay[NMAG !ETH !RW]: %NAME% %TAN%%PRICE%%WHITE%%CONTINUE%
 ItemDisplay[EXC]: %NAME%%YELLOW% *%WHITE%
 ItemDisplay[ELT]: %NAME%%RED% *%WHITE%
