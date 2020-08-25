@@ -52,14 +52,14 @@ ItemDisplay[vps]: %GRAY%Stamina%WHITE%
 ItemDisplay[wms]: %GRAY%Thawing%WHITE%
 ItemDisplay[yps]: %GRAY%Antidote%WHITE%
 
-// Hidden Items - White Items based on level
-ItemDisplay[NMAG !ETH !RW !leg SOCK=0 NORM (WEAPON OR ARMOR) CLVL>20]:
-ItemDisplay[NMAG !ETH !RW !leg SOCK=0 EXC (WEAPON OR ARMOR) CLVL>85]:
+// Hidden Items - White Items and Eth Items based on level
+ItemDisplay[NMAG !RW !leg NORM (WEAPON OR ARMOR) CLVL>20]:
+ItemDisplay[NMAG !RW !leg EXC (WEAPON OR ARMOR) CLVL>85]:
 
 // Decorate special items
 ItemDisplay[NORM OR EXC OR ELT]: %NAME%%WHITE%%CONTINUE%
 ItemDisplay[ETH]: %NAME%%GRAY% eth%WHITE%%CONTINUE%
 ItemDisplay[SOCK>0]: %NAME%%GRAY% (%SOCKETS%)%WHITE%%CONTINUE%
-ItemDisplay[NMAG !ETH !RW]: %NAME% %TAN%%PRICE%%WHITE%%CONTINUE%
+ItemDisplay[NMAG !ETH !RW !leg]: %NAME% %TAN%%PRICE%%WHITE%%CONTINUE%
 ItemDisplay[EXC]: %NAME%%YELLOW% *%WHITE%
 ItemDisplay[ELT]: %NAME%%RED% *%WHITE%
