@@ -59,7 +59,7 @@ ItemDisplay[NMAG !RW !leg EXC (WEAPON OR ARMOR) CLVL>85]:
 // Decorate special items
 ItemDisplay[NORM OR EXC OR ELT]: %NAME%%WHITE%%CONTINUE%
 ItemDisplay[ETH]: %NAME%%GRAY% eth%WHITE%%CONTINUE%
-ItemDisplay[amu or rin]: %NAME%%GRAY% L%ILVL%%CONTINUE%
+ItemDisplay[amu OR rin]: %NAME%%GRAY% L%ILVL%%CONTINUE%
 ItemDisplay[SOCK>0]: %NAME%%GRAY% (%SOCKETS%)%WHITE%%CONTINUE%
 ItemDisplay[NMAG !ETH !RW !leg (WEAPON OR ARMOR)]: %NAME% %GRAY%%PRICE%%WHITE%%CONTINUE%
 ItemDisplay[EXC]: %NAME%%YELLOW% *%WHITE%
