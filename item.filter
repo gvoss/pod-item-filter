@@ -32,6 +32,9 @@ ItemDisplay[(aq2 OR cq2) (NMAG OR MAG)]:
 // Hidden Items - Thrown potions
 ItemDisplay[gpm OR opm OR opl OR ops OR gps OR gpl AND CLVL>5]:
 
+// Hidden Items - inferior
+ItemDisplay[(ARMOR OR WEAPON) INF]:
+
 // Custom Color - Potions
 ItemDisplay[hp1 OR hp2 OR hp3 OR hp4 OR hp5]: %RED%+HP%WHITE%
 ItemDisplay[mp1 OR mp2 OR mp3 OR mp4 OR mp5]: %BLUE%+MP%WHITE%
@@ -52,12 +55,21 @@ ItemDisplay[vps]: %GRAY%Stamina%WHITE%
 ItemDisplay[wms]: %GRAY%Thawing%WHITE%
 ItemDisplay[yps]: %GRAY%Antidote%WHITE%
 
+// Renamed Items (keys and essences)
+ItemDisplay[tes]: %NAME% %GRAY%Andariel
+ItemDisplay[ceh]: %NAME% %GRAY%Mephisto
+ItemDisplay[bet]: %NAME% %GRAY%Diablo
+ItemDisplay[fed]: %NAME% %GRAY%Baal
+ItemDisplay[pk1]: %NAME% %GRAY%Countess
+ItemDisplay[pk2]: %NAME% %GRAY%Summoner
+ItemDisplay[pk3]: %NAME% %GRAY%Nihlathak
+
 // Hidden Items - White Items and Eth Items based on level
 ItemDisplay[NMAG !RW !leg NORM (WEAPON OR ARMOR) CLVL>20]:
 ItemDisplay[NMAG !RW !leg EXC (WEAPON OR ARMOR) CLVL>85]:
 
 // Show Item Level on some items
-ItemDisplay[amu OR rin OR cm1 OR cm2 OR cm3]: %NAME%%GRAY% L%ILVL%%CONTINUE%
+ItemDisplay[amu OR rin OR cm1 OR cm2 OR cm3]: %NAME%%GRAY% L%ILVL%%WHITE%
 
 // Decorate special items
 ItemDisplay[NORM OR EXC OR ELT]: %NAME%%WHITE%%CONTINUE%
