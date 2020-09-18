@@ -40,6 +40,7 @@ ItemDisplay[hp1 OR hp2 OR hp3 OR hp4 OR hp5]: %RED%+HP%WHITE%
 ItemDisplay[mp1 OR mp2 OR mp3 OR mp4 OR mp5]: %BLUE%+MP%WHITE%
 
 // Custom Color - Rejuvenation (renamed)
+ItemDisplay[rvs AND CLVL>85]:
 ItemDisplay[rvs AND CLVL>20]: %PURPLE%+%GRAY%HPMP%WHITE%
 ItemDisplay[rvs OR rvl]: %PURPLE%+HPMP%WHITE%
 
@@ -63,6 +64,12 @@ ItemDisplay[fed]: %NAME% %GRAY%Baal
 ItemDisplay[pk1]: %NAME% %GRAY%Countess
 ItemDisplay[pk2]: %NAME% %GRAY%Summoner
 ItemDisplay[pk3]: %NAME% %GRAY%Nihlathak
+
+// Renamed Items (maps)
+ItemDisplay[ma4]: %NAME% %GRAY%T1
+ItemDisplay[ma5]: %NAME% %GRAY%T2
+ItemDisplay[ma6]: %NAME% %GRAY%T3
+ItemDisplay[ma2]: %NAME% %GRAY%T4
 
 // Hidden Items - White Items and Eth Items based on level
 ItemDisplay[NMAG !RW !leg NORM (WEAPON OR ARMOR) CLVL>20]:

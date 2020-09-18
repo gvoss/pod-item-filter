@@ -8,6 +8,7 @@ A simple filter that:
 * decorates other items with more information:
   * `eth` flag for ethereal
   * item level for charms, amulets, rings
+  * tier level for maps
   * number of sockets
   * price for non magical items
   * item tier (yellow = exceptional, red = elite)
