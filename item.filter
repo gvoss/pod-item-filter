@@ -65,12 +65,6 @@ ItemDisplay[pk1]: %NAME% %GRAY%Countess
 ItemDisplay[pk2]: %NAME% %GRAY%Summoner
 ItemDisplay[pk3]: %NAME% %GRAY%Nihlathak
 
-// Renamed Items (maps)
-ItemDisplay[ma4]: %NAME% %GRAY%T1
-ItemDisplay[ma5]: %NAME% %GRAY%T2
-ItemDisplay[ma6]: %NAME% %GRAY%T3
-ItemDisplay[ma2]: %NAME% %GRAY%T4
-
 // Hidden Items - White Items and Eth Items based on level
 ItemDisplay[NMAG !RW !leg NORM (WEAPON OR ARMOR) CLVL>20]:
 ItemDisplay[NMAG !RW !leg EXC (WEAPON OR ARMOR) CLVL>85]:
