@@ -13,6 +13,9 @@ A simple filter that:
   * price for non magical items
   * item tier (yellow = exceptional, red = elite)
 
+## How to use
+Reference `https://raw.githubusercontent.com/gvoss/pod-item-filter/master/item.filter` in your Path of Diablo launcher
+
 ## Unique, Set, Runeword, and Socketed
 ![Unique, Set, Runeword, and Socketed](example-item-types.png)
 
