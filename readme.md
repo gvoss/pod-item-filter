@@ -12,3 +12,9 @@ A simple filter that:
   * number of sockets
   * price for non magical items
   * item tier (yellow = exceptional, red = elite)
+
+## Unique, Set, Runeword, and Socketed
+![Unique, Set, Runeword, and Socketed](example-item-types.png)
+
+## Potions, Scrolls, and Keys
+![Potions, Scrolls, and Keys](example-potions-scrolls.png)
