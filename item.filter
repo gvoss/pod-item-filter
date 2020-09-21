@@ -29,6 +29,14 @@ ItemDisplay[gfv OR gfy OR gfb OR gfg OR gfr OR gfw OR skf AND CLVL>20]:
 // Hidden Items - Basic Bolts and Arrows
 ItemDisplay[(aq2 OR cq2) (NMAG OR MAG)]:
 
+// Hidden Items - White Items and Eth Items (non-runeword bases)
+ItemDisplay[NMAG !RW !leg NORM (WEAPON OR ARMOR) SOCK<2 CLVL>25]:
+ItemDisplay[NMAG !RW !leg EXC (WEAPON OR ARMOR) SOCK<2 CLVL>85]:
+
+// Hidden Items - Magic and Rare
+ItemDisplay[(MAG OR RARE) NORM (WEAPON OR ARMOR) CLVL>25]:
+ItemDisplay[(MAG OR RARE) EXC (WEAPON OR ARMOR) CLVL>85]:
+
 // Hidden Items - Thrown potions
 ItemDisplay[gpm OR opm OR opl OR ops OR gps OR gpl AND CLVL>5]:
 
@@ -41,7 +49,7 @@ ItemDisplay[mp1 OR mp2 OR mp3 OR mp4 OR mp5]: %BLUE%+MP%WHITE%
 
 // Custom Color - Rejuvenation (renamed)
 ItemDisplay[rvs AND CLVL>85]:
-ItemDisplay[rvs AND CLVL>20]: %PURPLE%+%GRAY%HPMP%WHITE%
+ItemDisplay[rvs AND CLVL>25]: %PURPLE%+%GRAY%HPMP%WHITE%
 ItemDisplay[rvs OR rvl]: %PURPLE%+HPMP%WHITE%
 
 // Custom Color - Keys
@@ -64,10 +72,6 @@ ItemDisplay[fed]: %NAME% %GRAY%Baal
 ItemDisplay[pk1]: %NAME% %GRAY%Countess
 ItemDisplay[pk2]: %NAME% %GRAY%Summoner
 ItemDisplay[pk3]: %NAME% %GRAY%Nihlathak
-
-// Hidden Items - White Items and Eth Items based on level
-ItemDisplay[NMAG !RW !leg NORM (WEAPON OR ARMOR) CLVL>20]:
-ItemDisplay[NMAG !RW !leg EXC (WEAPON OR ARMOR) CLVL>85]:
 
 // Show Item Level on some items
 ItemDisplay[amu OR rin OR cm1 OR cm2 OR cm3]: %NAME%%GRAY% L%ILVL%%WHITE%
