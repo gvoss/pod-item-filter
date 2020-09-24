@@ -11,6 +11,7 @@ ItemDisplay[CLVL>40 GOLD<500]:
 ItemDisplay[CLVL>60 GOLD<1000]:
 ItemDisplay[CLVL>70 GOLD<1500]:
 ItemDisplay[CLVL>80 GOLD<2000]:
+ItemDisplay[CLVL>90 GOLD<5000]:
 
 // Hidden Items - Less useful potions
 ItemDisplay[hp1 CLVL>10]:
@@ -25,6 +26,7 @@ ItemDisplay[mp4 CLVL>45]:
 // Hidden Items - Gems
 ItemDisplay[gcv OR gcy OR gcb OR gcg OR gcr OR gcw OR skc AND CLVL>10]:
 ItemDisplay[gfv OR gfy OR gfb OR gfg OR gfr OR gfw OR skf AND CLVL>20]:
+ItemDisplay[gsv OR gsy OR gsb OR gsg OR gsr OR gsw OR sku AND CLVL>40]:
 
 // Hidden Items - Basic Bolts and Arrows
 ItemDisplay[(aq2 OR cq2) (NMAG OR MAG)]:
