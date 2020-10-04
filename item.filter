@@ -76,10 +76,10 @@ ItemDisplay[pk2]: %NAME% %GRAY%Summoner
 ItemDisplay[pk3]: %NAME% %GRAY%Nihlathak
 
 // Show Item Level on Jewelry and Charms
-ItemDisplay[amu OR rin OR cm1 OR cm2 OR cm3]: %GRAY%%ILVL% %NAME%%WHITE%
+ItemDisplay[amu OR rin OR cm1 OR cm2 OR cm3]: %NAME%%GRAY% %ILVL%%WHITE%
 
 // Decorate special items
-ItemDisplay[NORM OR EXC OR ELT]: %GRAY%%ILVL% %NAME%%WHITE%%CONTINUE%
+ItemDisplay[NORM OR EXC OR ELT]: %NAME%%GRAY% %ILVL%%WHITE%%CONTINUE%
 ItemDisplay[ETH]: %NAME%%GRAY% eth%WHITE%%CONTINUE%
 ItemDisplay[SOCK>0]: %NAME%%GRAY% (%SOCKETS%)%WHITE%%CONTINUE%
 ItemDisplay[NMAG !ETH !RW !leg (WEAPON OR ARMOR)]: %NAME% %GRAY%%PRICE%%WHITE%%CONTINUE%
