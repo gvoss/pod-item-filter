@@ -11,7 +11,8 @@ ItemDisplay[CLVL>40 GOLD<500]:
 ItemDisplay[CLVL>60 GOLD<1000]:
 ItemDisplay[CLVL>70 GOLD<1500]:
 ItemDisplay[CLVL>80 GOLD<2000]:
-ItemDisplay[CLVL>90 GOLD<5000]:
+ItemDisplay[CLVL>85 GOLD<5000]:
+ItemDisplay[CLVL>90 GOLD<10000]:
 
 // Hidden Items - Less useful potions
 ItemDisplay[hp1 CLVL>10]:
@@ -62,6 +63,8 @@ ItemDisplay[tsc]: %BLUE%TP%WHITE%
 ItemDisplay[isc]: %RED%ID%WHITE%
 
 // Custom Color - Resist Potions
+ItemDisplay[vps AND CLVL>10]:
+ItemDisplay[wms AND CLVL>10]:
 ItemDisplay[vps]: %GRAY%Stamina%WHITE%
 ItemDisplay[wms]: %GRAY%Thawing%WHITE%
 ItemDisplay[yps]: %GRAY%Antidote%WHITE%
