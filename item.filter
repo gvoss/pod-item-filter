@@ -29,16 +29,14 @@ ItemDisplay[gcv OR gcy OR gcb OR gcg OR gcr OR gcw OR skc AND CLVL>10]:
 ItemDisplay[gfv OR gfy OR gfb OR gfg OR gfr OR gfw OR skf AND CLVL>20]:
 ItemDisplay[gsv OR gsy OR gsb OR gsg OR gsr OR gsw OR sku AND CLVL>40]:
 
+// Stackable Gems
+ItemDisplay[GEMLEVEL>3]: %NAME% %GRAY%+%WHITE%
+
+// Stackable Runes
+ItemDisplay[RUNE>0]: %NAME%%MAP-60%
+
 // Hidden Items - Basic Bolts and Arrows
-ItemDisplay[(aq2 OR cq2) (NMAG OR MAG)]:
-
-// Hidden Items - White Items and Eth Items (non-runeword bases)
-ItemDisplay[NMAG !RW !leg NORM (WEAPON OR ARMOR) SOCK<2 CLVL>25]:
-ItemDisplay[NMAG !RW !leg EXC (WEAPON OR ARMOR) SOCK<2 CLVL>85]:
-
-// Hidden Items - Magic and Rare
-ItemDisplay[(MAG OR RARE) !ID NORM (WEAPON OR ARMOR) CLVL>25]:
-ItemDisplay[(MAG OR RARE) !ID EXC (WEAPON OR ARMOR) CLVL>85]:
+ItemDisplay[(aq2 OR cq2 OR aqv OR cqv) (NMAG OR MAG)]:
 
 // Hidden Items - Thrown potions
 ItemDisplay[gpm OR opm OR opl OR ops OR gps OR gpl AND CLVL>5]:
@@ -78,13 +76,20 @@ ItemDisplay[pk1]: %NAME% %GRAY%Countess
 ItemDisplay[pk2]: %NAME% %GRAY%Summoner
 ItemDisplay[pk3]: %NAME% %GRAY%Nihlathak
 
-// Show Item Level on Jewelry and Charms
+// Hidden Items - White Items and Eth Items based on level
+ItemDisplay[NMAG !RW !leg NORM (WEAPON OR ARMOR) CLVL>20]:
+ItemDisplay[NMAG !RW !leg EXC (WEAPON OR ARMOR) CLVL>85]:
+
+// Show Item Level on some items
 ItemDisplay[amu OR rin OR cm1 OR cm2 OR cm3]: %NAME%%GRAY% %ILVL%%WHITE%
 
 // Decorate special items
-ItemDisplay[NORM OR EXC OR ELT]: %NAME%%GRAY% %ILVL%%WHITE%%CONTINUE%
+ItemDisplay[NORM OR EXC OR ELT]: %NAME%%CONTINUE%
+ItemDisplay[ILVL>84]: %NAME%%GRAY% %ILVL%%WHITE%%CONTINUE%
 ItemDisplay[ETH]: %NAME%%GRAY% eth%WHITE%%CONTINUE%
 ItemDisplay[SOCK>0]: %NAME%%GRAY% (%SOCKETS%)%WHITE%%CONTINUE%
 ItemDisplay[NMAG !ETH !RW !leg (WEAPON OR ARMOR)]: %NAME% %GRAY%%PRICE%%WHITE%%CONTINUE%
-ItemDisplay[EXC]: %NAME%%YELLOW% *%WHITE%
-ItemDisplay[ELT]: %NAME%%RED% *%WHITE%
+ItemDisplay[EXC]: %NAME%%YELLOW% *%WHITE%%CONTINUE%
+ItemDisplay[ELT]: %NAME%%RED% *%WHITE%%CONTINUE%
+ItemDisplay[UNI]: %NAME%%MAP-0E%
+ItemDisplay[SET]: %NAME%%MAP-84%
