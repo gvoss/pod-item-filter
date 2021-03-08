@@ -78,13 +78,21 @@ ItemDisplay[pk1]: %NAME% %GRAY%Countess
 ItemDisplay[pk2]: %NAME% %GRAY%Summoner
 ItemDisplay[pk3]: %NAME% %GRAY%Nihlathak
 
-// Show Item Level on Jewelry and Charms
+// Hidden Items - White Items and Eth Items based on level
+ItemDisplay[NMAG !RW !leg NORM (WEAPON OR ARMOR) CLVL>20]:
+ItemDisplay[NMAG !RW !leg EXC (WEAPON OR ARMOR) CLVL>85]:
+
+// Show Item Level on some items
 ItemDisplay[amu OR rin OR cm1 OR cm2 OR cm3]: %NAME%%GRAY% %ILVL%%WHITE%
+ItemDisplay[(RARE OR MAG) AND (amu OR rin OR cm1 OR cm2 OR cm3)]: %PX-9E%%NAME%%GRAY% %ILVL%
 
 // Decorate special items
-ItemDisplay[NORM OR EXC OR ELT]: %NAME%%GRAY% %ILVL%%WHITE%%CONTINUE%
+ItemDisplay[NORM OR EXC OR ELT]: %NAME%%CONTINUE%
+ItemDisplay[ILVL>84]: %NAME%%GRAY% %ILVL%%WHITE%%CONTINUE%
 ItemDisplay[ETH]: %NAME%%GRAY% eth%WHITE%%CONTINUE%
 ItemDisplay[SOCK>0]: %NAME%%GRAY% (%SOCKETS%)%WHITE%%CONTINUE%
-ItemDisplay[NMAG !ETH !RW !leg (WEAPON OR ARMOR)]: %NAME% %GRAY%%PRICE%%WHITE%%CONTINUE%
-ItemDisplay[EXC]: %NAME%%YELLOW% *%WHITE%
-ItemDisplay[ELT]: %NAME%%RED% *%WHITE%
+ItemDisplay[!RW !leg (WEAPON OR ARMOR) PRICE>24999]: %NAME% %GRAY%$%WHITE%%CONTINUE%
+ItemDisplay[EXC]: %NAME%%YELLOW% *%WHITE%%CONTINUE%
+ItemDisplay[ELT]: %NAME%%RED% *%WHITE%%CONTINUE%
+ItemDisplay[UNI]: %NAME%%MAP-0E%
+ItemDisplay[SET]: %NAME%%MAP-84%
