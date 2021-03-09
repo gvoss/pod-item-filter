@@ -83,8 +83,8 @@ ItemDisplay[NMAG !RW !leg NORM (WEAPON OR ARMOR) CLVL>20]:
 ItemDisplay[NMAG !RW !leg EXC (WEAPON OR ARMOR) CLVL>85]:
 
 // Show Item Level on some items
-ItemDisplay[amu OR rin OR cm1 OR cm2 OR cm3]: %NAME%%GRAY% %ILVL%%WHITE%
-ItemDisplay[(RARE OR MAG) AND (amu OR rin OR cm1 OR cm2 OR cm3)]: %PX-9E%%NAME%%GRAY% %ILVL%
+ItemDisplay[MAG AND (amu OR rin OR cm1 OR cm2 OR cm3) AND (ILVL>84)]: %NAME%%GRAY% %ILVL%%PX-9E%
+ItemDisplay[RARE AND (amu OR rin)]: %NAME%%PX-A8%
 
 // Decorate special items
 ItemDisplay[NORM OR EXC OR ELT]: %NAME%%CONTINUE%
