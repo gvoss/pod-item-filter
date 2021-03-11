@@ -28,6 +28,8 @@ ItemDisplay[mp4 CLVL>45]:
 ItemDisplay[gcv OR gcy OR gcb OR gcg OR gcr OR gcw OR skc AND CLVL>10]:
 ItemDisplay[gfv OR gfy OR gfb OR gfg OR gfr OR gfw OR skf AND CLVL>20]:
 ItemDisplay[gsv OR gsy OR gsb OR gsg OR gsr OR gsw OR sku AND CLVL>40]:
+ItemDisplay[gsv OR gsy OR gsb OR gsg OR gsr OR gsw OR sku AND CLVL>40]:
+ItemDisplay[gpv OR gpy OR gpb OR gsg OR gpr OR gpw OR skz]: %DARK_GREEN%%NAME%%MAP%%WHITE%
 
 // Hidden Items - Basic Bolts and Arrows
 ItemDisplay[(aq2 OR cq2) (NMAG OR MAG)]:
@@ -83,8 +85,8 @@ ItemDisplay[NMAG !RW !leg NORM (WEAPON OR ARMOR) CLVL>20]:
 ItemDisplay[NMAG !RW !leg EXC (WEAPON OR ARMOR) CLVL>85]:
 
 // Show Item Level on some items
-ItemDisplay[MAG AND (amu OR rin OR cm1 OR cm2 OR cm3) AND (ILVL>84)]: %NAME%%GRAY% %ILVL%%PX-9E%
-ItemDisplay[RARE AND (amu OR rin)]: %NAME%%PX-A8%
+ItemDisplay[MAG AND (amu OR rin OR cm1 OR cm2 OR cm3) AND (ILVL>84)]: %NAME%%GRAY% %ILVL%%MAP%
+ItemDisplay[RARE AND (amu OR rin)]: %NAME%%MAP%
 
 // Decorate special items
 ItemDisplay[NORM OR EXC OR ELT]: %NAME%%CONTINUE%
@@ -94,5 +96,6 @@ ItemDisplay[SOCK>0]: %NAME%%GRAY% (%SOCKETS%)%WHITE%%CONTINUE%
 ItemDisplay[!RW !leg (WEAPON OR ARMOR) PRICE>24999]: %NAME% %GRAY%$%WHITE%%CONTINUE%
 ItemDisplay[EXC]: %NAME%%YELLOW% *%WHITE%%CONTINUE%
 ItemDisplay[ELT]: %NAME%%RED% *%WHITE%%CONTINUE%
-ItemDisplay[UNI]: %NAME%%MAP-0E%
-ItemDisplay[SET]: %NAME%%MAP-84%
+ItemDisplay[UNI]: %NAME%%MAP%%CONTINUE%
+ItemDisplay[SET]: %NAME%%MAP%%CONTINUE%
+ItemDisplay[WEAPON]: {Speed: %RED%%WPNSPD%%WHITE%}
