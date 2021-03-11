@@ -71,6 +71,9 @@ ItemDisplay[vps]: %GRAY%Stamina%WHITE%
 ItemDisplay[wms]: %GRAY%Thawing%WHITE%
 ItemDisplay[yps]: %GRAY%Antidote%WHITE%
 
+// Rune notifications
+ItemDisplay[RUNE AND GEMLEVEL>9]: %NAME%%MAP%
+
 // Renamed Items (keys and essences)
 ItemDisplay[tes]: %NAME% %GRAY%Andariel
 ItemDisplay[ceh]: %NAME% %GRAY%Mephisto
