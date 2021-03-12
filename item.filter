@@ -36,9 +36,9 @@ ItemDisplay[(aq2 OR cq2) (NMAG OR MAG)]:
 ItemDisplay[NMAG !RW !leg NORM (WEAPON OR ARMOR) SOCK<2 CLVL>25]:
 ItemDisplay[NMAG !RW !leg EXC (WEAPON OR ARMOR) SOCK<2 CLVL>85]:
 
-// Hidden Items - Magic and Rare
-ItemDisplay[(MAG OR RARE) !ID NORM (WEAPON OR ARMOR) CLVL>25]:
-ItemDisplay[(MAG OR RARE) !ID EXC (WEAPON OR ARMOR) CLVL>85]:
+// Hidden Items - Magic
+ItemDisplay[MAG !ID NORM (WEAPON OR ARMOR) CLVL>25]:
+ItemDisplay[MAG !ID EXC (WEAPON OR ARMOR) CLVL>85]:
 
 // Hidden Items - Thrown potions
 ItemDisplay[gpm OR opm OR opl OR ops OR gps OR gpl AND CLVL>5]:
