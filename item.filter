@@ -90,6 +90,9 @@ ItemDisplay[pk1]: %NAME% %GRAY%Countess%NOTIFY-ORANGE%
 ItemDisplay[pk2]: %NAME% %GRAY%Summoner%NOTIFY-ORANGE%
 ItemDisplay[pk3]: %NAME% %GRAY%Nihlathak%NOTIFY-ORANGE%
 
+// Good Base items notifications
+ItemDisplay[NMAG !RW (SOCK<1 OR SOCK>1) ED SUP ARMOR]: %NAME%%MAP%
+
 // Hidden Items - White Items and Eth Items based on level
 ItemDisplay[NMAG !RW !leg NORM (WEAPON OR ARMOR) CLVL>20]:
 ItemDisplay[NMAG !RW !leg EXC (WEAPON OR ARMOR) CLVL>85]:
