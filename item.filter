@@ -28,8 +28,6 @@ ItemDisplay[mp4 CLVL>45]:
 ItemDisplay[gcv OR gcy OR gcb OR gcg OR gcr OR gcw OR skc AND CLVL>10]:
 ItemDisplay[gfv OR gfy OR gfb OR gfg OR gfr OR gfw OR skf AND CLVL>20]:
 ItemDisplay[gsv OR gsy OR gsb OR gsg OR gsr OR gsw OR sku AND CLVL>40]:
-ItemDisplay[gsv OR gsy OR gsb OR gsg OR gsr OR gsw OR sku AND CLVL>40]:
-ItemDisplay[gpv OR gpy OR gpb OR gsg OR gpr OR gpw OR skz]: %DARK_GREEN%%NAME%%MAP%%WHITE%
 
 // Hidden Items - Basic Bolts and Arrows
 ItemDisplay[(aq2 OR cq2) (NMAG OR MAG)]:
@@ -72,16 +70,25 @@ ItemDisplay[wms]: %GRAY%Thawing%WHITE%
 ItemDisplay[yps]: %GRAY%Antidote%WHITE%
 
 // Rune notifications
-ItemDisplay[RUNE AND GEMLEVEL>9]: %NAME%%MAP%
+ItemDisplay[RUNE>11]: %NAME%%NOTIFY-ORANGE%
+
+// Gem notifications
+ItemDisplay[gzv OR gly OR glb OR glg OR glr OR glw OR skl]: %DARK_GREEN%%NAME%%NOTIFY-GREEN%
+
+// ooc notifications
+ItemDisplay[cx5]: %NAME%%NOTIFY-PURPLE%
+
+// map notifications
+ItemDisplay[ma2 OR ma4 OR ma5 OR ma6]: %NAME%%MAP%
 
 // Renamed Items (keys and essences)
-ItemDisplay[tes]: %NAME% %GRAY%Andariel
-ItemDisplay[ceh]: %NAME% %GRAY%Mephisto
-ItemDisplay[bet]: %NAME% %GRAY%Diablo
-ItemDisplay[fed]: %NAME% %GRAY%Baal
-ItemDisplay[pk1]: %NAME% %GRAY%Countess
-ItemDisplay[pk2]: %NAME% %GRAY%Summoner
-ItemDisplay[pk3]: %NAME% %GRAY%Nihlathak
+ItemDisplay[tes]: %NAME% %GRAY%Andariel%NOTIFY-ORANGE%
+ItemDisplay[ceh]: %NAME% %GRAY%Mephisto%NOTIFY-ORANGE%
+ItemDisplay[bet]: %NAME% %GRAY%Diablo%NOTIFY-ORANGE%
+ItemDisplay[fed]: %NAME% %GRAY%Baal%NOTIFY-ORANGE%
+ItemDisplay[pk1]: %NAME% %GRAY%Countess%NOTIFY-ORANGE%
+ItemDisplay[pk2]: %NAME% %GRAY%Summoner%NOTIFY-ORANGE%
+ItemDisplay[pk3]: %NAME% %GRAY%Nihlathak%NOTIFY-ORANGE%
 
 // Hidden Items - White Items and Eth Items based on level
 ItemDisplay[NMAG !RW !leg NORM (WEAPON OR ARMOR) CLVL>20]:
@@ -101,4 +108,4 @@ ItemDisplay[EXC]: %NAME%%YELLOW% *%WHITE%%CONTINUE%
 ItemDisplay[ELT]: %NAME%%RED% *%WHITE%%CONTINUE%
 ItemDisplay[UNI]: %NAME%%MAP%%CONTINUE%
 ItemDisplay[SET]: %NAME%%MAP%%CONTINUE%
-ItemDisplay[WEAPON]: {Speed: %RED%%WPNSPD%%WHITE%}
+//ItemDisplay[WEAPON]: %NAME%{Speed: %RED%%WPNSPD%}
