@@ -93,6 +93,9 @@ ItemDisplay[pk3]: %NAME% %GRAY%Nihlathak%NOTIFY-ORANGE%
 // Good Base items notifications
 ItemDisplay[NMAG !RW (SOCK<1 OR SOCK>1) ED SUP ARMOR]: %NAME%%MAP%
 
+// Hidden Items - Non craftable items (boots/gloves)
+ItemDisplay[NMAG AND (BOOTS OR GLOVES OR BELT) CLVL>5]:
+
 // Hidden Items - White Items and Eth Items based on level
 ItemDisplay[NMAG !RW !leg NORM (WEAPON OR ARMOR) CLVL>20]:
 ItemDisplay[NMAG !RW !leg EXC (WEAPON OR ARMOR) CLVL>85]:
@@ -107,6 +110,25 @@ ItemDisplay[ILVL>84]: %NAME%%GRAY% %ILVL%%WHITE%%CONTINUE%
 ItemDisplay[ETH]: %NAME%%GRAY% eth%WHITE%%CONTINUE%
 ItemDisplay[SOCK>0]: %NAME%%GRAY% (%SOCKETS%)%WHITE%%CONTINUE%
 ItemDisplay[!RW !leg (WEAPON OR ARMOR) PRICE>24999]: %NAME% %GRAY%$%WHITE%%CONTINUE%
+
+// Crafted items - Blood
+ItemDisplay[MAG AND (hlm OR xlm OR ulm)]: %NAME% %ORANGE%c%RED%b%WHITE%
+ItemDisplay[MAG AND (tbt OR xtb OR utb)]: %NAME% %ORANGE%c%RED%b%WHITE%
+ItemDisplay[MAG AND (vgl OR xvg OR uvg)]: %NAME% %ORANGE%c%RED%b%WHITE%
+ItemDisplay[MAG AND (hlm OR xlm OR ulm)]: %NAME% %ORANGE%c%RED%b%WHITE%
+ItemDisplay[MAG AND (mbl OR zmb OR umc)]: %NAME% %ORANGE%c%RED%b%WHITE%
+ItemDisplay[MAG AND (spk OR xpk OR upk)]: %NAME% %ORANGE%c%RED%b%WHITE%
+ItemDisplay[MAG AND WP1]: %NAME% %ORANGE%c%RED%b%WHITE%
+
+// Crafted items - Caster
+ItemDisplay[MAG AND (msk OR xsk OR usk)]: %NAME% %ORANGE%c%PURPLE%c%WHITE%
+ItemDisplay[MAG AND (lbt OR xlb OR ulb)]: %NAME% %ORANGE%c%PURPLE%c%WHITE%
+ItemDisplay[MAG AND (lgl OR xlg OR ulg)]: %NAME% %ORANGE%c%PURPLE%c%WHITE%
+ItemDisplay[MAG AND (vbl OR zvb OR uvc)]: %NAME% %ORANGE%c%PURPLE%c%WHITE%
+ItemDisplay[MAG AND (sml OR xml OR uml)]: %NAME% %ORANGE%c%PURPLE%c%WHITE%
+ItemDisplay[MAG AND (ltp OR xtp OR utp)]: %NAME% %ORANGE%c%PURPLE%c%WHITE%
+ItemDisplay[MAG AND (WP11 OR WP12 OR WP13)]: %NAME% %ORANGE%c%PURPLE%c%WHITE%
+
 ItemDisplay[EXC]: %NAME%%YELLOW% *%WHITE%%CONTINUE%
 ItemDisplay[ELT]: %NAME%%RED% *%WHITE%%CONTINUE%
 ItemDisplay[UNI]: %NAME%%MAP%%CONTINUE%
