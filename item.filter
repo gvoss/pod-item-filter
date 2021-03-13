@@ -106,7 +106,7 @@ ItemDisplay[RARE AND (amu OR rin)]: %NAME%%MAP%
 
 // Decorate special items
 ItemDisplay[NORM OR EXC OR ELT]: %NAME%%CONTINUE%
-ItemDisplay[ILVL>84]: %NAME%%GRAY% %ILVL%%WHITE%%CONTINUE%
+ItemDisplay[CRAFTALVL>89]: %NAME%%GRAY% %CRAFTALVL%%WHITE%%CONTINUE%
 ItemDisplay[ETH]: %NAME%%GRAY% eth%WHITE%%CONTINUE%
 ItemDisplay[SOCK>0]: %NAME%%GRAY% (%SOCKETS%)%WHITE%%CONTINUE%
 ItemDisplay[!RW !leg (WEAPON OR ARMOR) PRICE>24999]: %NAME% %GRAY%$%WHITE%%CONTINUE%
