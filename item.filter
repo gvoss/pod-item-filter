@@ -112,22 +112,22 @@ ItemDisplay[SOCK>0]: %NAME%%GRAY% (%SOCKETS%)%WHITE%%CONTINUE%
 ItemDisplay[!RW !leg (WEAPON OR ARMOR) PRICE>24999]: %NAME% %GRAY%$%WHITE%%CONTINUE%
 
 // Crafted items - Blood
-ItemDisplay[MAG AND (hlm OR xlm OR ulm)]: %NAME% %ORANGE%c%RED%b%WHITE%
-ItemDisplay[MAG AND (tbt OR xtb OR utb)]: %NAME% %ORANGE%c%RED%b%WHITE%
-ItemDisplay[MAG AND (vgl OR xvg OR uvg)]: %NAME% %ORANGE%c%RED%b%WHITE%
-ItemDisplay[MAG AND (hlm OR xlm OR ulm)]: %NAME% %ORANGE%c%RED%b%WHITE%
-ItemDisplay[MAG AND (mbl OR zmb OR umc)]: %NAME% %ORANGE%c%RED%b%WHITE%
-ItemDisplay[MAG AND (spk OR xpk OR upk)]: %NAME% %ORANGE%c%RED%b%WHITE%
-ItemDisplay[MAG AND WP1]: %NAME% %ORANGE%c%RED%b%WHITE%
+ItemDisplay[MAG AND (hlm OR xlm OR ulm)]: %NAME% %ORANGE%c%RED%b%WHITE%%CONTINUE%
+ItemDisplay[MAG AND (tbt OR xtb OR utb)]: %NAME% %ORANGE%c%RED%b%WHITE%%CONTINUE%
+ItemDisplay[MAG AND (vgl OR xvg OR uvg)]: %NAME% %ORANGE%c%RED%b%WHITE%%CONTINUE%
+ItemDisplay[MAG AND (hlm OR xlm OR ulm)]: %NAME% %ORANGE%c%RED%b%WHITE%%CONTINUE%
+ItemDisplay[MAG AND (mbl OR zmb OR umc)]: %NAME% %ORANGE%c%RED%b%WHITE%%CONTINUE%
+ItemDisplay[MAG AND (spk OR xpk OR upk)]: %NAME% %ORANGE%c%RED%b%WHITE%%CONTINUE%
+ItemDisplay[MAG AND WP1]: %NAME% %ORANGE%c%RED%b%WHITE%%CONTINUE%
 
 // Crafted items - Caster
-ItemDisplay[MAG AND (msk OR xsk OR usk)]: %NAME% %ORANGE%c%PURPLE%c%WHITE%
-ItemDisplay[MAG AND (lbt OR xlb OR ulb)]: %NAME% %ORANGE%c%PURPLE%c%WHITE%
-ItemDisplay[MAG AND (lgl OR xlg OR ulg)]: %NAME% %ORANGE%c%PURPLE%c%WHITE%
-ItemDisplay[MAG AND (vbl OR zvb OR uvc)]: %NAME% %ORANGE%c%PURPLE%c%WHITE%
-ItemDisplay[MAG AND (sml OR xml OR uml)]: %NAME% %ORANGE%c%PURPLE%c%WHITE%
-ItemDisplay[MAG AND (ltp OR xtp OR utp)]: %NAME% %ORANGE%c%PURPLE%c%WHITE%
-ItemDisplay[MAG AND (WP11 OR WP12 OR WP13)]: %NAME% %ORANGE%c%PURPLE%c%WHITE%
+ItemDisplay[MAG AND (msk OR xsk OR usk)]: %NAME% %ORANGE%c%PURPLE%c%WHITE%%CONTINUE%
+ItemDisplay[MAG AND (lbt OR xlb OR ulb)]: %NAME% %ORANGE%c%PURPLE%c%WHITE%%CONTINUE%
+ItemDisplay[MAG AND (lgl OR xlg OR ulg)]: %NAME% %ORANGE%c%PURPLE%c%WHITE%%CONTINUE%
+ItemDisplay[MAG AND (vbl OR zvb OR uvc)]: %NAME% %ORANGE%c%PURPLE%c%WHITE%%CONTINUE%
+ItemDisplay[MAG AND (sml OR xml OR uml)]: %NAME% %ORANGE%c%PURPLE%c%WHITE%%CONTINUE%
+ItemDisplay[MAG AND (ltp OR xtp OR utp)]: %NAME% %ORANGE%c%PURPLE%c%WHITE%%CONTINUE%
+ItemDisplay[MAG AND (WP11 OR WP12 OR WP13)]: %NAME% %ORANGE%c%PURPLE%c%WHITE%%CONTINUE%
 
 ItemDisplay[EXC]: %NAME%%YELLOW% *%WHITE%%CONTINUE%
 ItemDisplay[ELT]: %NAME%%RED% *%WHITE%%CONTINUE%
