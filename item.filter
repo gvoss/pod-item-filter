@@ -115,9 +115,9 @@ ItemDisplay[!RW !leg (WEAPON OR ARMOR) PRICE>24999]: %NAME% %GRAY%$%WHITE%%CONTI
 ItemDisplay[MAG AND (hlm OR xlm OR ulm)]: %NAME% %ORANGE%c%RED%b%WHITE%%CONTINUE%
 ItemDisplay[MAG AND (tbt OR xtb OR utb)]: %NAME% %ORANGE%c%RED%b%WHITE%%CONTINUE%
 ItemDisplay[MAG AND (vgl OR xvg OR uvg)]: %NAME% %ORANGE%c%RED%b%WHITE%%CONTINUE%
-ItemDisplay[MAG AND (hlm OR xlm OR ulm)]: %NAME% %ORANGE%c%RED%b%WHITE%%CONTINUE%
 ItemDisplay[MAG AND (mbl OR zmb OR umc)]: %NAME% %ORANGE%c%RED%b%WHITE%%CONTINUE%
 ItemDisplay[MAG AND (spk OR xpk OR upk)]: %NAME% %ORANGE%c%RED%b%WHITE%%CONTINUE%
+ItemDisplay[MAG AND (plt OR xlt OR ult)]: %NAME% %ORANGE%c%RED%b%WHITE%%CONTINUE%
 ItemDisplay[MAG AND WP1]: %NAME% %ORANGE%c%RED%b%WHITE%%CONTINUE%
 
 // Crafted items - Caster
