@@ -65,15 +65,15 @@ ItemDisplay[isc]: %RED%ID%WHITE%
 // Custom Color - Resist Potions
 ItemDisplay[vps AND CLVL>10]:
 ItemDisplay[wms AND CLVL>10]:
-ItemDisplay[vps]: %GRAY%Stamina%WHITE%
-ItemDisplay[wms]: %GRAY%Thawing%WHITE%
-ItemDisplay[yps]: %GRAY%Antidote%WHITE%
+ItemDisplay[vps]: %GRAY%Sta%WHITE%
+ItemDisplay[wms]: %GRAY%CR%WHITE%
+ItemDisplay[yps]: %GRAY%PR%WHITE%
 
 // Rune notifications
 ItemDisplay[RUNE>11]: %NAME%%NOTIFY-ORANGE%
 
 // Gem notifications
-ItemDisplay[gzv OR gly OR glb OR glg OR glr OR glw OR skl]: %DARK_GREEN%%NAME%%NOTIFY-GREEN%
+ItemDisplay[gzv OR gly OR glb OR glg OR glr OR glw OR skl]: %DARK_GREEN%%NAME%%NOTIFY-GRAY%
 
 // ooc notifications
 ItemDisplay[cx5]: %NAME%%NOTIFY-PURPLE%
@@ -90,9 +90,6 @@ ItemDisplay[pk1]: %NAME% %GRAY%Countess%NOTIFY-ORANGE%
 ItemDisplay[pk2]: %NAME% %GRAY%Summoner%NOTIFY-ORANGE%
 ItemDisplay[pk3]: %NAME% %GRAY%Nihlathak%NOTIFY-ORANGE%
 
-// Good Base items notifications
-ItemDisplay[NMAG !RW (SOCK<1 OR SOCK>1) ED SUP ARMOR]: %NAME%%MAP%
-
 // Hidden Items - Non craftable items (boots/gloves)
 ItemDisplay[NMAG AND (BOOTS OR GLOVES OR BELT) CLVL>5]:
 
@@ -101,7 +98,7 @@ ItemDisplay[NMAG !RW !leg NORM (WEAPON OR ARMOR) CLVL>20]:
 ItemDisplay[NMAG !RW !leg EXC (WEAPON OR ARMOR) CLVL>85]:
 
 // Show Item Level on some items
-ItemDisplay[MAG AND (amu OR rin OR cm1 OR cm2 OR cm3) AND (ILVL>84)]: %NAME%%GRAY% %ILVL%%MAP%
+ItemDisplay[MAG AND (amu OR rin OR cm1 OR cm2 OR cm3) AND (CRAFTALVL>89)]: %NAME%%GRAY% %CRAFTALVL%%ORANGE%c%WHITE%%MAP%
 ItemDisplay[RARE AND (amu OR rin)]: %NAME%%MAP%
 
 // Decorate special items
