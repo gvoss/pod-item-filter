@@ -126,8 +126,14 @@ ItemDisplay[MAG AND (sml OR xml OR uml)]: %NAME% %ORANGE%c%PURPLE%c%WHITE%%CONTI
 ItemDisplay[MAG AND (ltp OR xtp OR utp)]: %NAME% %ORANGE%c%PURPLE%c%WHITE%%CONTINUE%
 ItemDisplay[MAG AND (WP11 OR WP12 OR WP13)]: %NAME% %ORANGE%c%PURPLE%c%WHITE%%CONTINUE%
 
+// Paladin Shields with high res
+ItemDisplay[NMAG !RW CL3 RES>39]: %NAME%%RED% R%NOTIFY-GRAY%%WHITE%%CONTINUE%
+
+// Sup Chests
+ItemDisplay[NMAG !RW ED>0 EQ2]: %NAME%%BLUE% D%NOTIFY-ITEM%%CONTINUE%
+
 ItemDisplay[EXC]: %NAME%%YELLOW% *%WHITE%%CONTINUE%
 ItemDisplay[ELT]: %NAME%%RED% *%WHITE%%CONTINUE%
 ItemDisplay[UNI]: %NAME%%MAP%%CONTINUE%
 ItemDisplay[SET]: %NAME%%MAP%%CONTINUE%
-//ItemDisplay[WEAPON]: %NAME%{Speed: %RED%%WPNSPD%}
+ItemDisplay[WEAPON]: %NAME%{Speed: %RED%%WPNSPD%}
